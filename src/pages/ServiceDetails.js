@@ -14,8 +14,7 @@ const mainServicesData = {
     description: 'Our Bedridden Care program provides comprehensive support for fully dependent senior residents. We offer condition-based nutritious meals, skilled nursing, physiotherapy support, and comfortable, well-equipped rooms designed for complete care and comfort.',
     longDescription: 'At Happy Homes, we understand that bedridden residents require specialized, round-the-clock care. Our Bedridden Care program is designed to provide the highest level of medical and personal support, ensuring that every resident receives dignified care in a comfortable environment. Our trained nursing staff is available 24/7 to monitor vitals, administer medications, and respond to any emergencies.',
     icon: 'icon-6',
-    // image: '/assets/images/resource/service-1.jpg',
-    image: '/images/imageplaceholder.jpg',
+    image: '/images/resource/nursing.jpg',
     features: [
       '24/7 dedicated nursing supervision for high-dependency residents',
       'Customized diet plans based on medical condition and doctor recommendations',
@@ -40,8 +39,7 @@ const mainServicesData = {
     description: 'Our Assisted Living program provides personalized nutrition, attentive nursing, required physiotherapy, and safe, supportive rooms. We focus on helping seniors maintain their independence while receiving the support they need.',
     longDescription: 'Assisted Living at Happy Homes is designed for seniors who need some help with daily activities but still want to maintain their independence. Our caring staff provides personalized assistance while respecting the dignity and preferences of each resident. We create individualized care plans that adapt to changing needs.',
     icon: 'icon-7',
-    // image: '/assets/images/resource/service-2.jpg',
-    image: '/images/imageplaceholder.jpg',
+    image: '/images/resource/assisted.jpg',
     features: [
       'Dedicated personal assistance for dressing, bathing, mobility, and daily tasks',
       'Activity-based recovery programs such as light exercises, memory games, and cognitive activities',
@@ -67,8 +65,7 @@ const mainServicesData = {
     description: 'Our Independent Senior Living offers healthy tailored meals, wellness and physiotherapy options, and relaxed, well-equipped rooms for active seniors who want to enjoy community living.',
     longDescription: 'Independent Senior Living at Happy Homes is perfect for active seniors who want to enjoy a vibrant community lifestyle while having access to support services when needed. Our residents enjoy private accommodations, nutritious meals, and a full calendar of social activities and wellness programs.',
     icon: 'icon-8',
-    // image: '/assets/images/resource/service-3.jpg',
-    image: '/images/imageplaceholder.jpg',
+    image: '/images/resource/care.jpg',
     features: [
       'Community interaction activities like group discussions, hobby circles, and cultural events',
       'Engaging games and recreation such as chess, carrom, indoor games, music time, and outdoor walks',
@@ -204,7 +201,7 @@ const ServiceDetails = () => {
                   <h4>Need Help?</h4>
                   <p>Have questions about our services? We're here to help.</p>
                   <div className="contact-info">
-                    <p><i className="fas fa-phone"></i> +91 92099 16910</p>
+                    <p><i className="fas fa-phone"></i> +91 91300 67672</p>
                     <p><i className="fas fa-envelope"></i> info@happyhomes.com</p>
                   </div>
                   <Link to="/contact" className="btn-1 btn-small">
@@ -270,8 +267,8 @@ const ServiceDetails = () => {
                     <Link to="/contact" className="btn-1">
                       Schedule a Visit <span></span>
                     </Link>
-                    <a href="tel:+919209916910" className="btn-1 btn-alt">
-                      Call Now: +91 92099 16910 <span></span>
+                    <a href="tel:+919130067672" className="btn-1 btn-alt">
+                      Call Now: +91 91300 67672 <span></span>
                     </a>
                   </div>
                 </div>

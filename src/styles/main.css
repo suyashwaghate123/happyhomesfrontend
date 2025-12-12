@@ -488,7 +488,9 @@ ul {
 }
 
 .main-header.fixed-header .sticky-header {
-  top: 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .sticky-header .header-upper {

@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title" style={{ backgroundImage: 'url(/assets/images/background/page-title.jpg)' }}>
+      <div className="page-title" style={{ backgroundImage: 'url(/images/resource/pageheaderimage.jpg)' }}>
         <div className="auto-container">
           <h1>Contact Us</h1>
         </div>
@@ -89,7 +89,8 @@ const Contact = () => {
                   <i className="icon-2"></i>
                 </div>
                 <h4>Phone Number</h4>
-                <p><a href="tel:+919209916910">+91 92099 16910</a></p>
+                <p><a href="tel:+919130067672">+91 91300 67672</a></p>
+                <p><a href="tel:+919130061612">+91 91300 61612</a></p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -244,7 +245,7 @@ const Contact = () => {
               </div>
               <p>Prefer instant communication? Reach out to us via WhatsApp for quick responses or connect with us on social media.</p>
               <div className="social-buttons mt_30">
-                <a href="https://wa.me/919209916910" target="_blank" rel="noopener noreferrer" className="btn-1 btn-whatsapp">
+                <a href="https://wa.me/919130067672" target="_blank" rel="noopener noreferrer" className="btn-1 btn-whatsapp">
                   <i className="fab fa-whatsapp me-2"></i> Chat on WhatsApp
                   <span></span>
                 </a>
@@ -261,9 +262,8 @@ const Contact = () => {
               <div className="working-hours-box wow fadeInRight" data-wow-delay=".2s">
                 <h3><i className="icon-1 me-2"></i> Working Hours</h3>
                 <ul className="working-hours-list">
-                  <li><span>Visiting Hours:</span> 9:00 AM - 8:00 PM (Daily)</li>
-                  <li><span>Office Hours:</span> 9:00 AM - 6:00 PM (Mon-Sat)</li>
-                  <li><span>Emergency:</span> 24/7 Available</li>
+                  <li><span>Visiting Hours:</span> 11:00 AM - 5:00 PM (Daily)</li>
+                  <li><span>Office Hours:</span> 10:00 AM - 6:00 PM (Mon-Sat)</li>
                   <li><span>Admissions:</span> By Appointment</li>
                 </ul>
               </div>
@@ -283,7 +283,7 @@ const Contact = () => {
           <div className="text-center">
             <div className="cta-1-desc">Experience our caring environment firsthand. <br /> Call us now to schedule a tour of Happy Homes.</div>
             <div className="cta-1-link-bt">
-              <a href="tel:+919209916910" className="btn-1">Call Now: +91 92099 16910 <span></span></a>
+              <a href="tel:+919130067672" className="btn-1">Call Now: +91 91300 67672 <span></span></a>
             </div>
           </div>
         </div>

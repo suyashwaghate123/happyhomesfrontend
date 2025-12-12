@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title" style={{ backgroundImage: 'url(/assets/images/background/page-title.jpg)' }}>
+      <div className="page-title" style={{ backgroundImage: 'url(/images/resource/pageheaderimage.jpg)' }}>
         <div className="auto-container">
           <h1>About Us</h1>
         </div>
@@ -35,11 +35,11 @@ const About = () => {
                 <div className="about-1-shape-1"><img src="/assets/images/shape/pattern-1.png" alt="" /></div>
                 <div className="about-1-shape-2"><img src="/assets/images/shape/pattern-1.png" alt="" /></div>
                 <div className="about-1-image-1">
-                  <img src="/assets/images/resource/about-1.jpg" alt="About Happy Homes" />
+                  <img src="/images/resource/aboutus.jpg" alt="About Happy Homes" />
                 </div>
                 <div className="about-1-video-area">
                   <div className="about-1-video-btn">
-                    <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="overlay-link play-now ripple" data-fancybox="video" data-caption="">
+                    <a href="/images/resource/video.mov" className="overlay-link play-now ripple" data-fancybox="video" data-caption="">
                       <i className="icon-10"></i>
                     </a>
                   </div>
@@ -141,7 +141,7 @@ const About = () => {
             </div>
             <div className="col-lg-6">
               <div className="why-choose-image wow fadeInRight" data-wow-delay=".2s">
-                <img src="/assets/images/resource/about-2.jpg" alt="Why Choose Us" />
+                <img src="/images/resource/FAQ.jpg" alt="Why Choose Us" />
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ const About = () => {
             <div className="col-lg-3 col-md-6">
               <div className="funfact-1-block text-center">
                 <div className="d-flex align-items-center justify-content-center">
-                  <h2 className="funfact-1-number odometer" data-count="15">00</h2>
+                  <h2 className="funfact-1-number odometer" data-count="5">00</h2>
                   <h2 className="funfact-1-number-prefix">+</h2>
                 </div>
                 <p className="funfact-1-title">Years Experience</p>
@@ -165,7 +165,7 @@ const About = () => {
             <div className="col-lg-3 col-md-6">
               <div className="funfact-1-block text-center">
                 <div className="d-flex align-items-center justify-content-center">
-                  <h2 className="funfact-1-number odometer" data-count="500">00</h2>
+                  <h2 className="funfact-1-number odometer" data-count="180">00</h2>
                   <h2 className="funfact-1-number-prefix">+</h2>
                 </div>
                 <p className="funfact-1-title">Happy Residents</p>
@@ -204,7 +204,7 @@ const About = () => {
             <div className="col-lg-3 col-md-6">
               <div className="team-2-block wow fadeInLeft" data-wow-delay=".2s">
                 <div className="team-2-image">
-                  <div className="team-2-image-wrap"><img src="/assets/images/resource/team-5.jpg" alt="Dr. Rajesh Sharma" /></div>
+                  <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Dr. Rajesh Sharma" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
                       <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
@@ -221,7 +221,7 @@ const About = () => {
             <div className="col-lg-3 col-md-6">
               <div className="team-2-block wow fadeInLeft" data-wow-delay=".4s">
                 <div className="team-2-image">
-                  <div className="team-2-image-wrap"><img src="/assets/images/resource/team-6.jpg" alt="Priya Patel" /></div>
+                  <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Priya Patel" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
                       <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
@@ -238,7 +238,7 @@ const About = () => {
             <div className="col-lg-3 col-md-6">
               <div className="team-2-block wow fadeInLeft" data-wow-delay=".6s">
                 <div className="team-2-image">
-                  <div className="team-2-image-wrap"><img src="/assets/images/resource/team-7.jpg" alt="Anita Desai" /></div>
+                  <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Anita Desai" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
                       <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
@@ -255,7 +255,7 @@ const About = () => {
             <div className="col-lg-3 col-md-6">
               <div className="team-2-block wow fadeInLeft" data-wow-delay=".8s">
                 <div className="team-2-image">
-                  <div className="team-2-image-wrap"><img src="/assets/images/resource/team-8.jpg" alt="Vikram Singh" /></div>
+                  <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Vikram Singh" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
                       <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
@@ -275,7 +275,7 @@ const About = () => {
 
       {/* CTA Section */}
       <section className="cta-1-section">
-        <div className="cta-1-bg" style={{ backgroundImage: 'url(/assets/images/background/parallax-bg.jpg)' }}></div>
+        <div className="cta-1-bg" style={{ backgroundImage: 'url(/images/resource/videoplaceholder.jpg)' }}></div>
         <div className="auto-container">
           <div className="section_heading text-center mb_40">
             <span className="section_heading_title_small alt">Schedule a Visit</span>

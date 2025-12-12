@@ -71,19 +71,15 @@ body {
    HEADER & STICKY NAVIGATION FIX
    ======================================= */
 
-/* Main Header Fixed State */
+/* Main Header Hidden State on Scroll */
 .main-header.fixed-header .header-upper {
-  position: fixed;
-  top: 45px;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  background: #fff;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  animation: slideDown 0.3s ease;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Sticky Header Styles */
+/* Sticky Header Styles - Hidden on Scroll */
 .sticky-header {
   position: fixed !important;
   top: 0;
@@ -92,6 +88,24 @@ body {
   z-index: 999;
   background: #fff !important;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show sticky header when not scrolled */
+.main-header:not(.fixed-header) .sticky-header {
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Keep sticky header hidden when scrolled */
+.main-header.fixed-header .sticky-header {
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .sticky-header .header-upper {
@@ -430,6 +444,11 @@ a:hover {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.team-2-share-icon-area:hover .team-2-share-icon {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .team-2-social-icon li {
@@ -901,6 +920,7 @@ a:hover {
 
 .footer-1-top {
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  background-color: #f2f2f2;
 }
 
 .footer-1-social-icon li a {
@@ -911,12 +931,17 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: #2c2a49;
 }
 
 .footer-1-social-icon li a:hover {
   background: linear-gradient(135deg, var(--coral-primary) 0%, var(--coral-light) 100%);
   transform: translateY(-5px);
+}
+
+.footer-1-top .logo:hover ~ .footer-1-social-icon .fab,
+.footer-1-top-content .logo:hover ~ .footer-1-social-icon .fab {
+  color: white;
 }
 
 .footer-widget-title h4 {
@@ -941,6 +966,26 @@ a:hover {
    ======================================= */
 .main-header .header-upper {
   background: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Ensure header displays normally when not scrolled */
+.main-header:not(.fixed-header) .header-upper {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Top bar always visible */
+.main-header .header-top-1 {
+  transition: none;
+}
+
+.main-header:not(.fixed-header) .header-top-1 {
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 /* =======================================
@@ -1064,26 +1109,85 @@ nav.main-menu {
 
 /* Mobile only - show hamburger, hide menu */
 @media only screen and (max-width: 991px) {
+  /* Hide desktop menu on mobile */
   .main-header .nav-outer .main-menu,
   nav.main-menu.navbar-expand-md,
   nav.main-menu {
     display: none !important;
   }
   
+  /* Show hamburger menu on mobile */
   .nav-outer .mobile-nav-toggler,
   .main-header .nav-outer .mobile-nav-toggler {
     display: flex !important;
     visibility: visible !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+    order: 3;
   }
   
+  .nav-outer .mobile-nav-toggler img,
+  .main-header .nav-outer .mobile-nav-toggler img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  /* Hide desktop menu inside middle column, but keep the column for hamburger */
+  .main-header .header-upper .middle-column .main-menu {
+    display: none !important;
+  }
+  
+  /* Show middle column on mobile (but only the hamburger) */
   .main-header .header-upper .middle-column {
-    display: none;
+    display: flex !important;
+    justify-content: flex-end;
+    flex: 1;
+    order: 3;
+  }
+  
+  /* Make logo max-width 50% on mobile */
+  .main-header .header-upper .logo-box {
+    flex: 0 1 auto;
+    order: 1;
+  }
+  
+  .main-header .header-upper .logo-box .logo img {
+    max-width: 50% !important;
+    height: auto;
+  }
+  
+  /* Adjust header layout on mobile */
+  .main-header .header-upper .inner-container {
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap;
+  }
+  
+  /* Hide right column visit now button on mobile */
+  .main-header .header-upper .right-column {
+    order: 2;
+    flex: 0 0 auto;
+  }
+  
+  .main-header .header-upper .right-column .header-link-btn {
+    display: none !important;
+  }
+  
+  /* Ensure nav-outer is visible for hamburger */
+  .main-header .header-upper .middle-column .nav-outer {
+    display: flex !important;
+    align-items: center;
   }
 }
 
 .main-header.fixed-header .sticky-header {
-  box-shadow: var(--shadow-md);
-  background: #fff;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* FIX: Sticky header menu visibility */
@@ -1205,16 +1309,44 @@ nav.main-menu {
 .progressbar-1-outer {
   border-radius: var(--radius-full);
   background: rgba(30, 58, 95, 0.1);
+  position: relative;
+  height: 3px;
 }
 
 .progressbar-1-inner {
   background: linear-gradient(135deg, var(--coral-primary) 0%, var(--coral-light) 100%);
   border-radius: var(--radius-full);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: width 0.9s ease;
+  width: 0;
 }
 
 .progressbar-1-percentage {
   background: var(--navy-primary);
   border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  position: absolute;
+  right: 0;
+  top: -34px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  z-index: 10;
+  color: var(--coral-primary);
+  white-space: nowrap;
+}
+
+.progressbar-1-percentage .count-box,
+.progressbar-1-percentage .count-text {
+  color: var(--coral-primary) !important;
+  font-weight: 700;
+}
+
+.progressbar-1-percentage .count-box {
+  display: inline-block;
 }
 
 /* =======================================
@@ -1235,12 +1367,6 @@ input:focus, textarea:focus, select:focus {
 /* =======================================
    SCROLL TO TOP
    ======================================= */
-.scroll-to-top .scroll-top-inner {
-  /* border-radius: var(--radius-md); */
-  /* background: linear-gradient(135deg, var(--coral-primary) 0%, var(--coral-light) 100%); */
-  /* box-shadow: var(--shadow-coral); */
-}
-
 .scroll-to-top .scroll-top-inner:hover {
   transform: translateY(-5px);
 }
@@ -1248,13 +1374,90 @@ input:focus, textarea:focus, select:focus {
 /* =======================================
    MOBILE MENU
    ======================================= */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu .menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu.active .menu-backdrop {
+  opacity: 1;
+  visibility: visible;
+}
+
 .mobile-menu .menu-box {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  max-width: 85%;
+  height: 100%;
   background: var(--navy-primary);
+  z-index: 2;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  padding: 60px 20px 30px;
+}
+
+.mobile-menu.active .menu-box {
+  right: 0;
 }
 
 .mobile-menu .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
   background: var(--coral-primary);
   border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.3s ease;
+}
+
+.mobile-menu .close-btn:hover {
+  background: var(--coral-light);
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.mobile-menu-visible {
+  overflow: hidden;
+}
+
+body.mobile-menu-visible .mobile-menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* =======================================
@@ -1268,9 +1471,14 @@ input:focus, textarea:focus, select:focus {
    QUICK CONTACT BOXES
    ======================================= */
 .quick-contact-box {
+  background: #fff;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
   transition: all 0.4s ease;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-align: left !important;
 }
 
 .quick-contact-box:hover {
@@ -1279,8 +1487,68 @@ input:focus, textarea:focus, select:focus {
 }
 
 .quick-contact-box .icon {
-  border-radius: var(--radius-md);
+  width: 100%;
+  height: 60px;
   background: linear-gradient(135deg, var(--coral-primary) 0%, var(--coral-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+}
+
+.quick-contact-box .icon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.quick-contact-box .icon i {
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.quick-contact-box h4 {
+  color: var(--navy-primary);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0 15px 0;
+  padding: 0 30px;
+  text-align: left !important;
+}
+
+.quick-contact-box p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 10px 0;
+  padding: 0 30px;
+  text-align: left !important;
+}
+
+.quick-contact-box p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+
+.quick-contact-box p a {
+  color: var(--coral-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.quick-contact-box p a:hover {
+  color: var(--coral-light);
+  text-decoration: underline;
 }
 
 /* =======================================
@@ -1459,7 +1727,16 @@ input:focus, textarea:focus, select:focus {
    CONTACT PAGE STYLES
    ======================================= */
 .contact-info-section {
-  padding: 100px 0;
+  padding: 80px 0;
+}
+
+.contact-info-section .row {
+  margin: 0 -15px;
+}
+
+.contact-info-section .col-lg-4,
+.contact-info-section .col-md-6 {
+  padding: 0 15px;
 }
 
 .contact-form-section {
@@ -2480,6 +2757,20 @@ input:focus, textarea:focus, select:focus {
     color: var(--coral-primary, #ff4000);
   }
   
+  /* Top bar Visit Now button styling */
+  .header-top-1-login .btn-1 {
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .header-top-1-login .btn-1:hover {
+    transform: translateY(-2px);
+  }
+  
   ul.header-top-1-social-icon {
     display: flex !important;
     align-items: center;
@@ -2519,35 +2810,36 @@ input:focus, textarea:focus, select:focus {
    STICKY HEADER WITH TOP BAR - Desktop
    ======================================= */
 
-/* Make entire header sticky when scrolled */
+/* Keep top bar fixed, hide main menu bar when scrolled */
 @media only screen and (min-width: 992px) {
-  .main-header.fixed-header {
+  /* Keep top bar fixed on scroll */
+  .main-header.fixed-header .header-top-1 {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
-    animation: slideDown 0.4s ease;
+    z-index: 1000;
+    transition: none;
   }
   
-  .main-header.fixed-header .header-top-1 {
-    display: block !important;
-    background: #2C2A49;
-  }
-  
+  /* Hide main menu bar when scrolled */
   .main-header.fixed-header .header-upper {
-    background: #fff;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
   }
   
   /* Hide the separate sticky-header when using fixed-header */
   .main-header.fixed-header .sticky-header {
-    display: none !important;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
   }
   
-  /* Add padding to body when header is fixed to prevent content jump */
+  /* Remove padding since main header is not fixed */
   body.header-fixed {
-    padding-top: 140px;
+    padding-top: 0;
   }
 }
 
@@ -2574,7 +2866,7 @@ input:focus, textarea:focus, select:focus {
    ======================================= */
 @media only screen and (min-width: 992px) {
   .main-header .logo-box .logo img {
-    max-width: 50% !important;
+    max-width: 100%;
     height: auto;
   }
 }

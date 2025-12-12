@@ -47,7 +47,7 @@ const LivingOptions = () => {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title" style={{ backgroundImage: 'url(/images/imageplaceholder.jpg)' }}>
+      <div className="page-title" style={{ backgroundImage: 'url(/images/resource/pageheaderimage.jpg)' }}>
         <div className="auto-container">
           <h1>Our Facility</h1>
         </div>
@@ -82,7 +82,7 @@ const LivingOptions = () => {
               <div className="faq-1-image wow fadeInRight" data-wow-delay=".2s">
                 <div className="faq-1-shape"><img src="/assets/images/shape/pattern-1.png" alt="" /></div>
                 {/* <img src="/assets/images/resource/feature-image-2.jpg" alt="Happy Homes Facility" /> */}
-                <img src="/images/imageplaceholder.jpg" alt="Happy Homes Facility" style={{ borderRadius: '20px' }} />
+                <img src="/images/main-slider/slider-1.jpg" alt="Happy Homes Facility" style={{ borderRadius: '20px' }} />
               </div>
             </div>
           </div>

@@ -13,18 +13,12 @@ const Header = () => {
       const scrolled = window.scrollY > 100;
       setIsScrolled(scrolled);
       
-      // Add/remove body class for padding when header is fixed
-      if (scrolled) {
-        document.body.classList.add('header-fixed');
-      } else {
-        document.body.classList.remove('header-fixed');
-      }
+      // No need to add body padding since header will hide instead of being fixed
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      document.body.classList.remove('header-fixed');
     };
   }, []);
 
@@ -64,8 +58,9 @@ const Header = () => {
     { path: '/services', label: 'Services' },
     { path: '/about', label: 'About' },
     { path: '/living-options', label: 'Facility' },
-    { path: '/blog', label: 'Blogs' },
-    { path: '/gallery', label: 'Infrastructure' },
+    // { path: '/blog', label: 'Blogs' },
+    // { path: '/gallery', label: 'Infrastructure' },
+    { path: '/gallery', label: 'Gallery' },
     { path: '/contact', label: 'Contact' }
   ];
 
@@ -100,13 +95,15 @@ const Header = () => {
             <div className="header-top-1-row d-flex align-items-center justify-content-between">
               <div className="header-top-1-left-column">
                 <ul className="header-top-1-contact-info d-flex align-items-center">
-                  <li><i className="icon-1"></i><span>Open Hours:</span> Mon-Sun 10:00 AM - 5:00 PM</li>
-                  <li><i className="icon-2"></i><span>Phone:</span> <a href="tel:+919209916910">+91 92099 16910</a></li>
+                  <li><i className="icon-1"></i><span>Visiting Hours:</span> Mon-Sun 10:00 AM - 5:00 PM</li>
+                  <li><i className="icon-2"></i><span>Phone:</span> <a href="tel:+919130067672">+91 91300 67672</a></li>
                   <li><i className="icon-3"></i><span>Email:</span> <a href="mailto:info@happyhomes.com">info@happyhomes.com</a></li>
                 </ul>
               </div>
               <div className="header-top-1-right-column d-flex align-items-center">
-                <div className="header-top-1-login"><a href="#" onClick={openPopup}>Visit Now</a></div>
+                {/* <div className="header-top-1-login">
+                  <a href="#" onClick={openPopup} className="btn-1">Visit Now <span></span></a>
+                </div> */}
                 <ul className="header-top-1-social-icon d-flex align-items-center">
                   <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                   <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
@@ -185,7 +182,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`mobile-menu ${isMobileMenuOpen ? '' : ''}`}>
+        <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <div className="menu-backdrop" onClick={closeMobileMenu}></div>
           <div className="close-btn" onClick={closeMobileMenu}>
             <span className="fal fa-times"></span>

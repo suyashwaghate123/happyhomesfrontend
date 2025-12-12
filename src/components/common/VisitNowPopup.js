@@ -216,7 +216,7 @@ const VisitNowPopup = ({ isOpen, onClose }) => {
         </form>
 
         <div className="visit-popup-footer">
-          <p>Or call us directly: <a href="tel:+919209916910">+91 92099 16910</a></p>
+          <p>Or call us directly: <a href="tel:+919130067672">+91 91300 67672</a></p>
         </div>
       </div>
     </div>

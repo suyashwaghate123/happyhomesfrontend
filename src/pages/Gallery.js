@@ -7,18 +7,24 @@ const Gallery = () => {
 
   // Static gallery data
   const galleryImages = [
-    { id: 1, image: '/assets/images/resource/service-1.jpg', title: 'Comfortable Rooms', category: 'rooms' },
-    { id: 2, image: '/assets/images/resource/service-2.jpg', title: 'Medical Facility', category: 'medical' },
-    { id: 3, image: '/assets/images/resource/service-3.jpg', title: 'Garden Area', category: 'garden' },
-    { id: 4, image: '/assets/images/resource/service-4.jpg', title: 'Dining Hall', category: 'dining' },
-    { id: 5, image: '/assets/images/resource/service-5.jpg', title: 'Recreation Room', category: 'recreation' },
-    { id: 6, image: '/assets/images/resource/service-6.jpg', title: 'Therapy Room', category: 'medical' },
-    { id: 7, image: '/assets/images/resource/event-3.jpg', title: 'Community Events', category: 'events' },
-    { id: 8, image: '/assets/images/resource/event-4.jpg', title: 'Birthday Celebration', category: 'events' },
-    { id: 9, image: '/assets/images/resource/event-5.jpg', title: 'Yoga Session', category: 'recreation' },
-    { id: 10, image: '/assets/images/resource/event-6.jpg', title: 'Cultural Program', category: 'events' },
-    { id: 11, image: '/assets/images/resource/blog-1.jpg', title: 'Common Area', category: 'rooms' },
-    { id: 12, image: '/assets/images/resource/blog-2.jpg', title: 'Beautiful Garden', category: 'garden' },
+    { id: 1, image: '/images/resource/project-1.jpg', title: 'Comfortable Rooms', category: 'rooms' },
+    { id: 2, image: '/images/resource/project-2.jpg', title: 'Medical Facility', category: 'medical' },
+    { id: 3, image: '/images/resource/project-3.jpg', title: 'Garden Area', category: 'garden' },
+    { id: 4, image: '/images/resource/project-4.jpg', title: 'Dining Hall', category: 'dining' },
+    { id: 5, image: '/images/resource/project-5.jpg', title: 'Recreation Room', category: 'recreation' },
+    { id: 6, image: '/images/resource/project-6.jpg', title: 'Therapy Room', category: 'medical' },
+    { id: 7, image: '/images/resource/project-7.jpg', title: 'Community Events', category: 'events' },
+    { id: 8, image: '/images/resource/project-8.jpg', title: 'Birthday Celebration', category: 'events' },
+    { id: 9, image: '/images/resource/project-9.jpg', title: 'Yoga Session', category: 'recreation' },
+    { id: 10, image: '/images/resource/project-10.jpg', title: 'Cultural Program', category: 'events' },
+    { id: 11, image: '/images/resource/project-11.jpg', title: 'Common Area', category: 'rooms' },
+    { id: 12, image: '/images/resource/project-12.jpg', title: 'Beautiful Garden', category: 'garden' },
+    { id: 13, image: '/images/resource/project-13.jpg', title: 'Resident Room', category: 'rooms' },
+    { id: 14, image: '/images/resource/project-14.jpg', title: 'Nursing Station', category: 'medical' },
+    { id: 15, image: '/images/resource/project-15.jpg', title: 'Outdoor Space', category: 'garden' },
+    { id: 16, image: '/images/resource/project-16.jpg', title: 'Dining Area', category: 'dining' },
+    { id: 17, image: '/images/resource/project-17.jpg', title: 'Activity Room', category: 'recreation' },
+    { id: 18, image: '/images/resource/project-18.jpg', title: 'Festival Celebration', category: 'events' },
   ];
 
   const categories = ['all', 'rooms', 'medical', 'garden', 'dining', 'recreation', 'events'];
@@ -54,7 +60,7 @@ const Gallery = () => {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title" style={{ backgroundImage: 'url(/assets/images/background/page-title.jpg)' }}>
+      <div className="page-title" style={{ backgroundImage: 'url(/images/resource/pageheaderimage.jpg)' }}>
         <div className="auto-container">
           <h1>Our Gallery</h1>
         </div>
@@ -121,14 +127,14 @@ const Gallery = () => {
 
       {/* Video Tour Section */}
       <section className="video-1-section">
-        <div className="video-1-bg" style={{ backgroundImage: 'url(/assets/images/background/video-bg2.jpg)' }}></div>
+        <div className="video-1-bg" style={{ backgroundImage: 'url(/images/resource/videoplaceholder.jpg)' }}></div>
         <div className="auto-container">
           <div className="section_heading text-center mb_40">
             <span className="section_heading_title_small alt">Video Tour</span>
             <h2 className="section_heading_title_big alt">Take A Virtual <br /> Tour Of Our Facility</h2>
           </div>
           <div className="video-1-video-btn">
-            <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="overlay-link play-now ripple" data-fancybox="video" data-caption="">
+            <a href="/images/resource/video.mov" className="overlay-link play-now ripple" data-fancybox="video" data-caption="">
               <i className="icon-10"></i>
             </a>
           </div>
@@ -137,7 +143,7 @@ const Gallery = () => {
 
       {/* CTA Section */}
       <section className="cta-1-section">
-        <div className="cta-1-bg" style={{ backgroundImage: 'url(/assets/images/background/parallax-bg.jpg)' }}></div>
+        <div className="cta-1-bg" style={{ backgroundImage: 'url(/images/resource/videoplaceholder.jpg)' }}></div>
         <div className="auto-container">
           <div className="section_heading text-center mb_40">
             <span className="section_heading_title_small alt">Visit Us</span>

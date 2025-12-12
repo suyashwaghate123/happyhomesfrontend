@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
+  const [activeAccordion, setActiveAccordion] = useState(2); // Third accordion is open by default
+
   useEffect(() => {
     // Initialize WOW.js for scroll animations
     if (typeof window.WOW !== 'undefined') {
@@ -12,7 +14,7 @@ const Services = () => {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title" style={{ backgroundImage: 'url(/assets/images/background/page-title.jpg)' }}>
+      <div className="page-title" style={{ backgroundImage: 'url(/images/resource/pageheaderimage.jpg)' }}>
         <div className="auto-container">
           <h1>Our Services</h1>
         </div>
@@ -38,7 +40,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-2-block-wrap">
                 <div className="service-2-image">
-                  <img src="/assets/images/resource/service-1.jpg" alt="Assisted Living" />
+                  <img src="/images/resource/assisted.jpg" alt="Assisted Living" />
                 </div>
                 <div className="service-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
                   <div className="service-2-icon"><i className="icon-6"></i></div>
@@ -55,7 +57,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-2-block-wrap">
                 <div className="service-2-image">
-                  <img src="/assets/images/resource/service-2.jpg" alt="Medical & Health" />
+                  <img src="/images/resource/medical.jpg" alt="Medical & Health" />
                 </div>
                 <div className="service-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="1s">
                   <div className="service-2-icon"><i className="icon-7"></i></div>
@@ -72,7 +74,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-2-block-wrap">
                 <div className="service-2-image">
-                  <img src="/assets/images/resource/service-3.jpg" alt="Residential Care" />
+                  <img src="/images/resource/care.jpg" alt="Residential Care" />
                 </div>
                 <div className="service-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="1.2s">
                   <div className="service-2-icon"><i className="icon-8"></i></div>
@@ -89,7 +91,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-2-block-wrap">
                 <div className="service-2-image">
-                  <img src="/assets/images/resource/service-4.jpg" alt="Nursing Care" />
+                  <img src="/images/resource/nursing.jpg" alt="Nursing Care" />
                 </div>
                 <div className="service-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
                   <div className="service-2-icon"><i className="icon-35"></i></div>
@@ -106,7 +108,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-2-block-wrap">
                 <div className="service-2-image">
-                  <img src="/assets/images/resource/service-5.jpg" alt="Physical Assistance" />
+                  <img src="/images/resource/physicalassis.jpg" alt="Physical Assistance" />
                 </div>
                 <div className="service-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="1s">
                   <div className="service-2-icon"><i className="icon-36"></i></div>
@@ -123,7 +125,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-2-block-wrap">
                 <div className="service-2-image">
-                  <img src="/assets/images/resource/service-6.jpg" alt="Personal Care" />
+                  <img src="/images/resource/personalcare.jpg" alt="Personal Care" />
                 </div>
                 <div className="service-2-block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="1.2s">
                   <div className="service-2-icon"><i className="icon-37"></i></div>
@@ -141,7 +143,7 @@ const Services = () => {
 
       {/* CTA Section */}
       <section className="cta-1-section">
-        <div className="cta-1-bg" data-parallax='{"y": 30}' style={{ backgroundImage: 'url(/assets/images/background/parallax-bg.jpg)' }}></div>
+        <div className="cta-1-bg" data-parallax='{"y": 30}' style={{ backgroundImage: 'url(/images/resource/videoplaceholder.jpg)' }}></div>
         <div className="auto-container">
           <div className="section_heading text-center mb_40">
             <span className="section_heading_title_small alt">Schedule a Visit</span>
@@ -164,7 +166,7 @@ const Services = () => {
               <div className="faq-1-image">
                 <div className="faq-1-shape"><img src="/assets/images/shape/pattern-1.png" alt="" /></div>
                 <div className="faq-2-shape"><img src="/assets/images/shape/pattern-1.png" alt="" /></div>
-                <img src="/assets/images/resource/feature-image-2.jpg" alt="FAQ" />
+                <img src="/images/resource/FAQ.jpg" alt="FAQ" />
               </div>
             </div>
             <div className="col-lg-6 ps-lg-5">
@@ -176,45 +178,57 @@ const Services = () => {
               {/* Accordion */}
               <div className="accordian-boxed style-two">
                 <ul className="accordion-box style-three">
-                  <li className="accordion block">
-                    <div className="acc-btn">
+                  <li className={`accordion block ${activeAccordion === 0 ? 'active-block' : ''}`}>
+                    <div 
+                      className={`acc-btn ${activeAccordion === 0 ? 'active' : ''}`}
+                      onClick={() => setActiveAccordion(activeAccordion === 0 ? -1 : 0)}
+                    >
                       <div className="icon-outer"><span className="far fa-plus"></span> <span className="far fa-minus"></span></div>
                       What is the admission process?
                     </div>
-                    <div className="acc-content">
+                    <div className={`acc-content ${activeAccordion === 0 ? 'current' : ''}`}>
                       <div className="content">
                         <div className="text">Our admission process is simple. First, schedule a visit to tour our facility. Then, complete the admission form with medical history. Our team will assess care needs and create a personalized care plan.</div>
                       </div>
                     </div>
                   </li>
-                  <li className="accordion block">
-                    <div className="acc-btn">
+                  <li className={`accordion block ${activeAccordion === 1 ? 'active-block' : ''}`}>
+                    <div 
+                      className={`acc-btn ${activeAccordion === 1 ? 'active' : ''}`}
+                      onClick={() => setActiveAccordion(activeAccordion === 1 ? -1 : 1)}
+                    >
                       <div className="icon-outer"><span className="far fa-plus"></span> <span className="far fa-minus"></span></div>
                       What are the visiting hours?
                     </div>
-                    <div className="acc-content">
+                    <div className={`acc-content ${activeAccordion === 1 ? 'current' : ''}`}>
                       <div className="content">
                         <div className="text">Family members are welcome to visit from 9 AM to 8 PM daily. We encourage regular visits as they contribute significantly to our residents' emotional well-being and happiness.</div>
                       </div>
                     </div>
                   </li>
-                  <li className="accordion block active-block">
-                    <div className="acc-btn active">
+                  <li className={`accordion block ${activeAccordion === 2 ? 'active-block' : ''}`}>
+                    <div 
+                      className={`acc-btn ${activeAccordion === 2 ? 'active' : ''}`}
+                      onClick={() => setActiveAccordion(activeAccordion === 2 ? -1 : 2)}
+                    >
                       <div className="icon-outer"><span className="far fa-plus"></span> <span className="far fa-minus"></span></div>
                       What medical facilities are available?
                     </div>
-                    <div className="acc-content current">
+                    <div className={`acc-content ${activeAccordion === 2 ? 'current' : ''}`}>
                       <div className="content">
                         <div className="text">We have 24/7 nursing care, regular doctor visits, emergency medical response, medication management, physiotherapy services, and tie-ups with nearby hospitals for specialized care.</div>
                       </div>
                     </div>
                   </li>
-                  <li className="accordion block">
-                    <div className="acc-btn">
+                  <li className={`accordion block ${activeAccordion === 3 ? 'active-block' : ''}`}>
+                    <div 
+                      className={`acc-btn ${activeAccordion === 3 ? 'active' : ''}`}
+                      onClick={() => setActiveAccordion(activeAccordion === 3 ? -1 : 3)}
+                    >
                       <div className="icon-outer"><span className="far fa-plus"></span> <span className="far fa-minus"></span></div>
                       Can residents bring personal belongings?
                     </div>
-                    <div className="acc-content">
+                    <div className={`acc-content ${activeAccordion === 3 ? 'current' : ''}`}>
                       <div className="content">
                         <div className="text">Yes, residents are encouraged to bring personal items that make them feel at home - photos, favorite books, small furniture pieces, and cherished memorabilia. This helps create a comfortable, familiar environment.</div>
                       </div>

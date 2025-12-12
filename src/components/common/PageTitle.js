@@ -6,7 +6,7 @@ const PageTitle = ({ title, breadcrumbs = [] }) => {
     <>
       <div 
         className="page-title" 
-        style={{ backgroundImage: 'url(/images/background/page-title.jpg)' }}
+        style={{ backgroundImage: 'url(/images/resource/pageheaderimage.jpg)' }}
       >
         <div className="auto-container">
           <h1>{title}</h1>

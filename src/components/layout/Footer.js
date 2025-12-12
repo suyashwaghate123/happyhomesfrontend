@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="footer-1-top-content d-flex align-items-center justify-content-between">
             <div className="logo">
               <Link to="/">
-                <img src="/images/happyhomeslogo.png" alt="Happy Homes" />
+                <img src="/images/happyhomeslogo.png" alt="Happy Homes" style={{maxWidth: '210px'}}/>
               </Link>
             </div>
             <ul className="footer-1-social-icon d-flex align-items-center">
@@ -81,7 +81,7 @@ const Footer = () => {
                 <ul className="contact-widget-1-list">
                   <li><i className="icon-14"></i> Happy Homes Care, Sai Satyam Park, Khandve Nagar, Wagholi, Pune, Maharashtra 412207</li>
                   <li><i className="icon-3"></i><a href="mailto:info@happyhomes.com">info@happyhomes.com</a></li>
-                  <li><i className="icon-2"></i><a href="tel:+919209916910">+91 92099 16910</a></li>
+                  <li><i className="icon-2"></i><a href="tel:+919130067672">+91 91300 67672</a></li>
                 </ul>
               </div>
             </div>

@@ -151,7 +151,7 @@ p {
 }
 
 .logo {
-    max-width: 262px;
+    max-width: 110px;
 }
 
 textarea {
@@ -1927,7 +1927,7 @@ ul.banner-social-icon li a:hover {
 /* footer style */
 
 .footer-1-top {
-    background: #262540;
+    background: #f2f2f2;
     padding: 41px 0;
 }
 
