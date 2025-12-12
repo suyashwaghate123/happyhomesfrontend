@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import api from '../services/api';
+import { submitContactForm } from '../services/api';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await api.submitContactForm(formData);
+      const response = await submitContactForm(formData);
       if (response.success) {
         setSubmitStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully. We will contact you soon.' });
         setFormData({

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import api from '../services/api';
+import { getHomePageData } from '../services/api';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const fetchHomeData = async () => {
       try {
-        await api.getHomeData();
+        await getHomePageData();
         // Data is fetched but currently using static content
         // Will be used when admin panel is ready
       } catch (error) {
@@ -535,7 +535,7 @@ const Home = () => {
       </section>
 
       {/* Team Section */}
-      <section className="team-2-section theme-gray-bg">
+      {/* <section className="team-2-section theme-gray-bg">
         <div className="auto-container">
           <div className="section_heading text-center mb_70">
             <span className="section_heading_title_small">Exclusive Team</span>
@@ -680,7 +680,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
             {/* Funfact/Counter Section */}
       <section className="funfact-1-section alt">
@@ -752,7 +752,7 @@ const Home = () => {
                     <div className="swiper-slide">
                       <div className="testimonial-1-block">
                         <div className="testimonial-1-author-thumb">
-                          <img src="/images/resource/member.jpg" alt="Ramesh Patil" />
+                          {/* <img src="/images/resource/member.jpg" alt="Ramesh Patil" /> */}
                           {/* <img src="/images/imageplaceholder.jpg" alt="Ramesh Patil" /> */}
                           <div className="testimonial-1-quote-icon"><i className="icon-25"></i></div>
                         </div>
@@ -772,7 +772,7 @@ const Home = () => {
                     <div className="swiper-slide">
                       <div className="testimonial-1-block">
                         <div className="testimonial-1-author-thumb">
-                          <img src="/images/resource/member.jpg" alt="Sunita Deshpande" />
+                          {/* <img src="/images/resource/member.jpg" alt="Sunita Deshpande" /> */}
                           {/* <img src="/images/imageplaceholder.jpg" alt="Sunita Deshpande" /> */}
                           <div className="testimonial-1-quote-icon"><i className="icon-25"></i></div>
                         </div>
@@ -792,7 +792,7 @@ const Home = () => {
                     <div className="swiper-slide">
                       <div className="testimonial-1-block">
                         <div className="testimonial-1-author-thumb">
-                          <img src="/images/resource/member.jpg" alt="Dr. Anil Mehta" />
+                          {/* <img src="/images/resource/member.jpg" alt="Dr. Anil Mehta" /> */}
                           {/* <img src="/images/imageplaceholder.jpg" alt="Dr. Anil Mehta" /> */}
                           <div className="testimonial-1-quote-icon"><i className="icon-25"></i></div>
                         </div>

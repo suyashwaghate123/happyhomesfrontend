@@ -194,7 +194,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="team-2-section theme-gray-bg">
+      {/* <section className="team-2-section theme-gray-bg">
         <div className="auto-container">
           <div className="section_heading text-center mb_70">
             <span className="section_heading_title_small">Our Team</span>
@@ -271,7 +271,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="cta-1-section">

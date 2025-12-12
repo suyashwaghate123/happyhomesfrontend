@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 // Create axios instance with default config
+// Uses REACT_APP_API_URL from .env file if set, otherwise falls back to '/api' (for proxy in development)
 const api = axios.create({
   baseURL: process.env.REACT_APP_API_URL || '/api',
   headers: {

@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <div className="testimonial-page-block">
                   <div className="testimonial-header d-flex align-items-center">
                     <div className="testimonial-author-thumb">
-                      <img src={testimonial.image} alt={testimonial.name} />
+                      {/* <img src={testimonial.image} alt={testimonial.name} /> */}
                     </div>
                     <div className="testimonial-author-info">
                       <h4>{testimonial.name}</h4>
