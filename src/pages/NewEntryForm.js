@@ -7,6 +7,7 @@ const NewEntryForm = () => {
   const [completedSteps, setCompletedSteps] = useState([]);
   const [submitting, setSubmitting] = useState(false);
   const [applicationId, setApplicationId] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   // Form data state
   const [formData, setFormData] = useState({
@@ -318,6 +319,9 @@ const NewEntryForm = () => {
       
       // Note: API interceptor already extracts response.data
       if (response.success) {
+        // Clear any previous error messages
+        setErrorMessage(null);
+        
         // Store application ID for subsequent steps
         if (response.data?.applicationId && !applicationId) {
           setApplicationId(response.data.applicationId);
@@ -331,11 +335,10 @@ const NewEntryForm = () => {
       return false;
     } catch (error) {
       console.error('Error saving step data:', error);
-      // If API fails, still allow local progression for demo
-      if (!completedSteps.includes(currentStep)) {
-        setCompletedSteps(prev => [...prev, currentStep]);
-      }
-      return true;
+      const errorMsg = error.response?.data?.message || error.message || 'Failed to save data. Please try again.';
+      setErrorMessage(errorMsg);
+      setTimeout(() => setErrorMessage(null), 5000);
+      return false;
     } finally {
       setSubmitting(false);
     }
@@ -353,14 +356,17 @@ const NewEntryForm = () => {
         // Final submission - call complete API
         try {
           if (applicationId) {
-            await completeAdmission({ applicationId });
+            const completeResponse = await completeAdmission({ applicationId });
+            if (completeResponse.success) {
+              // Success - application completed
+              console.log('Application completed successfully:', applicationId);
+            }
           }
         } catch (error) {
           console.error('Error completing admission:', error);
-        }
-        // Generate application ID if not already set
-        if (!applicationId) {
-          setApplicationId('HH' + Date.now().toString().slice(-8));
+          const errorMsg = error.response?.data?.message || error.message || 'Failed to complete application. Please contact support.';
+          setErrorMessage(errorMsg);
+          setTimeout(() => setErrorMessage(null), 5000);
         }
         setCurrentStep(7);
       } else {
@@ -1316,6 +1322,35 @@ const NewEntryForm = () => {
             {renderStepIndicator()}
             
             <div className="form-content">
+              {errorMessage && (
+                <div className="alert alert-danger" style={{ 
+                  padding: '12px 16px', 
+                  marginBottom: '20px', 
+                  backgroundColor: '#f8d7da', 
+                  color: '#721c24', 
+                  border: '1px solid #f5c6cb', 
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <i className="fas fa-exclamation-circle"></i>
+                  <span>{errorMessage}</span>
+                  <button 
+                    onClick={() => setErrorMessage(null)}
+                    style={{ 
+                      marginLeft: 'auto', 
+                      background: 'none', 
+                      border: 'none', 
+                      color: '#721c24',
+                      cursor: 'pointer',
+                      fontSize: '18px'
+                    }}
+                  >
+                    ×
+                  </button>
+                </div>
+              )}
               {currentStep === 1 && renderStep1()}
               {currentStep === 2 && renderStep2()}
               {currentStep === 3 && renderStep3()}
