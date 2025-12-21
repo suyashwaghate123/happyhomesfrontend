@@ -96,7 +96,7 @@ const Header = () => {
               <div className="header-top-1-left-column">
                 <ul className="header-top-1-contact-info d-flex align-items-center">
                   <li><i className="icon-1"></i><span>Visiting Hours:</span> Mon-Sun 10:00 AM - 5:00 PM</li>
-                  <li><i className="icon-2"></i><span>Phone:</span> <a href="tel:+919130067672">+91 91300 67672</a></li>
+                  <li><i className="icon-2"></i><span>Phone:</span> <a href="tel:+919130067672">+91 91300 67672</a> / <a href="tel:+919130061612">+91 91300 61612</a></li>
                   <li><i className="icon-3"></i><span>Email:</span> <a href="mailto:info@happyhomes.com">info@happyhomes.com</a></li>
                 </ul>
               </div>
@@ -105,10 +105,10 @@ const Header = () => {
                   <a href="#" onClick={openPopup} className="btn-1">Visit Now <span></span></a>
                 </div> */}
                 <ul className="header-top-1-social-icon d-flex align-items-center">
-                  <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                  <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
-                  <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -199,11 +199,10 @@ const Header = () => {
             {/* Social Links */}
             <div className="social-links">
               <ul className="clearfix">
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-twitter"></span></a></li>
-                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-facebook-square"></span></a></li>
-                <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-pinterest-p"></span></a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-instagram"></span></a></li>
-                <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-youtube"></span></a></li>
+                <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><span className="fab fa-twitter"></span></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><span className="fab fa-facebook-square"></span></a></li>
+                <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><span className="fab fa-instagram"></span></a></li>
+                <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><span className="fab fa-youtube"></span></a></li>
               </ul>
             </div>
           </nav>

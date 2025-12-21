@@ -251,11 +251,10 @@ const Contact = () => {
                 </a>
               </div>
               <div className="social-icons mt_30">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
               </div>
             </div>
             <div className="col-lg-6">
@@ -283,7 +282,7 @@ const Contact = () => {
           <div className="text-center">
             <div className="cta-1-desc">Experience our caring environment firsthand. <br /> Call us now to schedule a tour of Happy Homes.</div>
             <div className="cta-1-link-bt">
-              <a href="tel:+919130067672" className="btn-1">Call Now: +91 91300 67672 <span></span></a>
+              <a href="tel:+919130067672" className="btn-1">Call Now: +91 91300 67672 / +91 91300 61612 <span></span></a>
             </div>
           </div>
         </div>

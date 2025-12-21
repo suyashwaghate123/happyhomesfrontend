@@ -14,23 +14,23 @@ const Footer = () => {
             </div>
             <ul className="footer-1-social-icon d-flex align-items-center">
               <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin-in"></i>
+                <a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-instagram"></i>
+                <a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-youtube"></i>
                 </a>
               </li>
             </ul>
@@ -82,6 +82,7 @@ const Footer = () => {
                   <li><i className="icon-14"></i> Happy Homes Care, Sai Satyam Park, Khandve Nagar, Wagholi, Pune, Maharashtra 412207</li>
                   <li><i className="icon-3"></i><a href="mailto:info@happyhomes.com">info@happyhomes.com</a></li>
                   <li><i className="icon-2"></i><a href="tel:+919130067672">+91 91300 67672</a></li>
+                  <li><i className="icon-2"></i><a href="tel:+919130061612">+91 91300 61612</a></li>
                 </ul>
               </div>
             </div>

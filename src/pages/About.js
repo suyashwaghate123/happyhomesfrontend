@@ -207,9 +207,10 @@ const About = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Dr. Rajesh Sharma" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -224,9 +225,10 @@ const About = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Priya Patel" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -241,9 +243,10 @@ const About = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Anita Desai" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -258,9 +261,10 @@ const About = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Vikram Singh" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>

@@ -260,9 +260,10 @@ const Home = () => {
           <div className="banner-slider-control banner-slider-button-next"><span><i className="icon-4"></i></span></div>
         </div>
         <ul className="banner-social-icon d-flex">
-          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
         </ul>
       </section>
 
@@ -548,9 +549,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Management" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -565,9 +567,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Doctor" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -582,9 +585,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Nursing" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -599,9 +603,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Care Takers" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -616,9 +621,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Kitchen" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -633,9 +639,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Dining" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -650,9 +657,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="House Keeping" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
@@ -667,9 +675,10 @@ const Home = () => {
                   <div className="team-2-image-wrap"><img src="/images/resource/member.jpg" alt="Maintenance" /></div>
                   <div className="team-2-share-icon-area">
                     <ul className="team-2-social-icon">
-                      <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61585323246449" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/HappyHomesCare" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/happyhomescare/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@HappyHomesCarePune" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                     <div className="team-2-share-icon"><i className="icon-11"></i></div>
                   </div>
